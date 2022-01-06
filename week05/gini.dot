@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<proline &le; 953.5<br/>gini = 0.656<br/>samples = 124<br/>value = [42, 50, 32]<br/>class = class_1>, fillcolor="#ecfcf3"] ;
+1 [label=<color_intensity &le; 3.97<br/>gini = 0.54<br/>samples = 88<br/>value = [6, 50, 32]<br/>class = class_1>, fillcolor="#bff7d6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<ash &le; 3.07<br/>gini = 0.043<br/>samples = 46<br/>value = [1, 45, 0]<br/>class = class_1>, fillcolor="#3de684"] ;
+1 -> 2 ;
+3 [label=<gini = 0.0<br/>samples = 45<br/>value = [0, 45, 0]<br/>class = class_1>, fillcolor="#39e581"] ;
+2 -> 3 ;
+4 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0, 0]<br/>class = class_0>, fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label=<flavanoids &le; 1.99<br/>gini = 0.391<br/>samples = 42<br/>value = [5, 5, 32]<br/>class = class_2>, fillcolor="#a36fec"] ;
+1 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 32<br/>value = [0, 0, 32]<br/>class = class_2>, fillcolor="#8139e5"] ;
+5 -> 6 ;
+7 [label=<proline &le; 719.0<br/>gini = 0.5<br/>samples = 10<br/>value = [5, 5, 0]<br/>class = class_0>, fillcolor="#ffffff"] ;
+5 -> 7 ;
+8 [label=<gini = 0.0<br/>samples = 5<br/>value = [0, 5, 0]<br/>class = class_1>, fillcolor="#39e581"] ;
+7 -> 8 ;
+9 [label=<gini = 0.0<br/>samples = 5<br/>value = [5, 0, 0]<br/>class = class_0>, fillcolor="#e58139"] ;
+7 -> 9 ;
+10 [label=<gini = 0.0<br/>samples = 36<br/>value = [36, 0, 0]<br/>class = class_0>, fillcolor="#e58139"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
